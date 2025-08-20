@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/monokai.min.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Title Slide -->
+      <section>
+        <h1>Quarterly Earnings Report</h1>
+        <p>Prepared by Technical Consultant</p>
+        <p><strong>Email:</strong> 24f1001384@ds.study.iitm.ac.in</p>
+        <aside class="notes">
+          Welcome stakeholders, this presentation shows quarterly performance with interactive elements.
+        </aside>
+      </section>
+
+      <!-- Markdown Slide -->
+      <section data-markdown>
+        <textarea data-template>
+# Key Highlights (Markdown)
+
+- Revenue Growth: **12% YoY**
+- Net Profit: **₹ 1,200 Cr**
+- EPS: **₹ 15.7**
+- ROE: **18%**
+
+---
+*Markdown lets us write slides quickly*
+        </textarea>
+        <aside class="notes">
+          This slide demonstrates Markdown integration inside RevealJS.
+        </aside>
+      </section>
+
+      <!-- Fragments (Animated Appearance) -->
+      <section>
+        <h2>Strategic Initiatives</h2>
+        <ul>
+          <li class="fragment">Digital Transformation</li>
+          <li class="fragment">AI-driven Risk Analysis</li>
+          <li class="fragment">Customer Experience Enhancement</li>
+          <li class="fragment">Regulatory Compliance Investments</li>
+        </ul>
+        <aside class="notes">
+          Discuss each initiative one by one with fragment animations.
+        </aside>
+      </section>
+
+      <!-- Code Sample with Syntax Highlighting -->
+      <section>
+        <h2>Data Analysis Code</h2>
+        <pre><code class="language-python">
+import pandas as pd
+
+df = pd.read_csv("earnings.csv")
+qoq_growth = df['revenue'].pct_change().iloc[-1] * 100
+print(f"QoQ Revenue Growth: {qoq_growth:.2f}%")
+        </code></pre>
+        <aside class="notes">
+          This is a Python snippet showing quarterly growth calculation.
+        </aside>
+      </section>
+
+      <!-- Math Equations -->
+      <section>
+        <h2>Financial Formula</h2>
+        <p>Return on Equity (ROE):</p>
+        <p>$$ ROE = \frac{Net\ Income}{Shareholder's\ Equity} \times 100 $$</p>
+        <aside class="notes">
+          Reinforce financial KPIs with clear equations.
+        </aside>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/math/math.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
+    });
+  </script>
+</body>
+</html>
